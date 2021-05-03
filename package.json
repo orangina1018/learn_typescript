@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/orangina1018/learn_typescript/issues"
   },
-  "homepage": "https://github.com/orangina1018/learn_typescript#readme"
+  "homepage": "https://github.com/orangina1018/learn_typescript#readme",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
 }
