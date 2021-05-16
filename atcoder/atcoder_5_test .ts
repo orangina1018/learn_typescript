@@ -1,3 +1,4 @@
+//入力を考える関数
 function main(input: string) {
   // ここに処理を書く
   let N: string = input.split('\n')[0];
@@ -12,14 +13,32 @@ function main(input: string) {
   let B_number: number = +B;
   console.log(B);
 
-  let remainder: number = 0;
-  let X: number = 0;
+  //格桁の総和を求める
+  function sum_digit_number(X: number): number {
+    let remainder: number = 0;
+    X = 0;
 
-  while (X > 0) {
-    remainder += X % 10;
-    X /= 10;
+    while (X > 0) {
+      remainder += X % 10;
+      X /= 10;
+    }
+    let sum = remainder;
+    return sum;
   }
 
-  for (let i = A; i < B + 1; A++) {}
+  function sum_main(
+    N_number: number,
+    A_number: number,
+    B_number: number
+  ): number {
+    let ans_total_number: number = 0;
+    for (let i = 1; i <= N_number; ++i) {
+      let sum = sum_digit_number(i);
+      if (sum >= A_number && sum <= B_number) {
+        ans_total_number += i;
+      }
+    }
+    return ans_total_number;
+  }
 }
 main(require('fs').readFileSync('test5.txt', 'utf8'));
