@@ -29,4 +29,4 @@ function main(input: string) {
   }
   console.log(count);
 }
-main(require('fs').readFileSync('test4.txt', 'utf8'));
+main(require('fs').readFileSync('input_file/file_4.txt', 'utf8'));

@@ -12,4 +12,4 @@ function main(input: string) {
   }
   console.log(i);
 }
-main(require('fs').readFileSync('test2.txt', 'utf8'));
+main(require('fs').readFileSync('input_file/file_2.txt', 'utf8'));

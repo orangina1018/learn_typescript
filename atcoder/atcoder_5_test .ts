@@ -41,4 +41,4 @@ function main(input: string) {
     return ans_total_number;
   }
 }
-main(require('fs').readFileSync('test5.txt', 'utf8'));
+main(require('fs').readFileSync('input_file/file_5.txt', 'utf8'));
