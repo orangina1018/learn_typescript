@@ -26,6 +26,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "@types/node": "^15.3.0",
     "axios": "^0.21.1"
   }
 }

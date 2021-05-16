@@ -30,7 +30,7 @@ function main(input: string) {
     N_number: number,
     A_number: number,
     B_number: number
-  ): number {
+  ): void {
     let ans_total_number: number = 0;
     for (let i = 1; i <= N_number; ++i) {
       let sum = sum_digit_number(i);
@@ -38,7 +38,7 @@ function main(input: string) {
         ans_total_number += i;
       }
     }
-    return ans_total_number;
+    return console.log(ans_total_number);
   }
 }
 main(require('fs').readFileSync('input_file/file_5.txt', 'utf8'));
